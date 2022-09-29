@@ -18,6 +18,9 @@
     
     :where(&__logo, &__link):hover{
         cursor: pointer;
+        background-color: var(--text);
+        color: var(--background);
+        border-radius: 5px;
     }
     
     &__list{

@@ -3,52 +3,52 @@ import './Skills.scss';
 
 const Skills = () => {
   return (
-    <>
+    <div className='skills'>
       <ul className='dynamic-txts'>
-        <li>
-          <span>HTML/CSS</span>
+        {/* <li>
+          <p>HTML/CSS</p>
         </li>
         <li>
-          <span>SCSS</span>
+          <p>SCSS</p>
         </li>
         <li>
-          <span>JAVASCRIPT</span>
+          <p>JAVASCRIPT</p>
+        </li> */}
+        <li>
+          <p>REACT</p>
+        </li>
+        {/* <li>
+          <p>REACT-REDUX</p>
         </li>
         <li>
-          <span>REACT</span>
+          <p>NODE.JS</p>
         </li>
         <li>
-          <span>REACT-REDUX</span>
+          <p>SQL</p>
         </li>
         <li>
-          <span>NODE.JS</span>
+          <p>POSTGRESQL</p>
         </li>
         <li>
-          <span>SQL</span>
+          <p>SEQUELIZE</p>
         </li>
         <li>
-          <span>POSTGRESQL</span>
+          <p>GIT</p>
         </li>
         <li>
-          <span>SEQUELIZE</span>
+          <p>STRAPI</p>
         </li>
         <li>
-          <span>GIT</span>
+          <p>WORDPRESS</p>
         </li>
         <li>
-          <span>STRAPI</span>
+          <p>MATERIALIZE</p>
         </li>
         <li>
-          <span>WORDPRESS</span>
-        </li>
-        <li>
-          <span>MATERIALIZE</span>
-        </li>
-        <li>
-          <span>BULMA</span>
-        </li>
+          <p>BULMA</p>
+        </li> */}
       </ul>
-    </>
+    </div>
   );
 };
 

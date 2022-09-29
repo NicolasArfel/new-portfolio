@@ -1,12 +1,12 @@
 :root {
-    --background:#22577A;
-    --dark-green: #38A3A5;
-    --medium-green:#57CC99;
-    --green: #80ED99;
-    --light-green: #C7F9CC;
+    --background:#6B9080;
+    --dark-text: #A4C3B2;
+    --medium:#CCE3DE;
+    --nav: #EAF4F4;
+    --text: #F6FFF8;
 }
 body {
     background-color:var(--background);
-    color: var(--light-green);
+    color: var(--text);
     font-size: 16px;
 }
