@@ -5,7 +5,7 @@ const Row = () => {
   return (
     <>
       <div className='row'>
-        <img className='row__image' src='#' alt='photo du projet' />
+        <img className='row__image' src='#' alt='projet' />
         <div className='row__title'>
           <p>Nom du projet</p>
         </div>
