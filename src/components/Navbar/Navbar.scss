@@ -1,0 +1,27 @@
+.navbar {
+    font-family: 'Bungee', sans-serif;
+    // color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    
+    &__logo {
+        font-size: 2rem;
+    }
+    
+    &__logo, &__link {
+        padding: 1rem;   
+    }
+    
+    :where(&__logo, &__link):hover{
+        cursor: pointer;
+    }
+    
+    &__list{
+        display: flex;
+        list-style: none;
+    }
+}
