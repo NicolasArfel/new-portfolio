@@ -10,9 +10,20 @@ const Contact = () => {
         <Title title={'Contact'} />
         <div className='contact__section'>
           <section className='contact__infos'>
-            <p>Tel : 06 99 73 74 27</p>
-            <p>Email : nicolasarfel@gmail.com</p>
-            <p>Loc. : Bordeaux</p>
+            <p>
+              <span className='material-symbols-outlined'>
+                phone_in_talk_watchface_indicator
+              </span>{' '}
+              06 99 73 74 27
+            </p>
+            <p>
+              <span className='material-symbols-outlined'>mail</span>{' '}
+              nicolasarfel@gmail.com
+            </p>
+            <p>
+              <span className='material-symbols-outlined'>pin_drop</span>{' '}
+              Bordeaux
+            </p>
           </section>
           <Form />
         </div>

@@ -3,6 +3,10 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--dark-text);
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
 
     &__section {
         display: flex;
@@ -14,9 +18,12 @@
         margin: auto;
         
         p {
-            width: 50%;
-            margin: auto;
+            width: 70%;
+            margin: auto 25%;
             padding-bottom: 1rem;
+        }
+        span {
+            font-weight: bold;
         }
     }
 }
