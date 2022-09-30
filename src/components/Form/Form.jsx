@@ -10,10 +10,10 @@ const Form = () => {
 
     emailjs
       .sendForm(
-        'service_dnzf41k',
-        'template_tmrwtse',
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        'kU-GKNH0RgXeVGUW5'
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -24,6 +24,8 @@ const Form = () => {
           console.log(error.text);
         }
       );
+
+    e.target.reset();
   };
 
   return (
