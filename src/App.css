@@ -6,7 +6,8 @@
     --text: #F6FFF8;
 }
 body {
-    background-color:var(--background);
+    background-color:var(--dark-text);
     color: var(--text);
     font-size: 16px;
 }
+

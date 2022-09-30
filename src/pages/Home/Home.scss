@@ -6,6 +6,10 @@
     align-items: center;
     font-family: 'Bungee', sans-serif;
     text-align: center;
+    background-image: url('./layered-waves-haikei.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 25% 75%;
     
     &__title {
         height: 100vh;
@@ -46,14 +50,16 @@
     button {
         font-size: 1rem;
         font-weight: bold;
-        border: 1px solid var(--dark-text);
-        border-radius: 5px;
+        border: none;
+        border-radius: 15px;
         margin-top:5rem ;
         cursor: pointer;
         padding: 1rem;
         font-family: 'Roboto', sans-serif;
         color: var(--text);
         background-color: var(--dark-text);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+
         
         &:hover {
             background-color: var(--text);
@@ -75,7 +81,6 @@
         border-radius: 50%;
         object-fit: cover;
         border: 5px solid var(--text);
-        // box-shadow: 2px 10px 20px 2px black;
     }
 }
 

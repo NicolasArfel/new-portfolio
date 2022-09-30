@@ -20,7 +20,7 @@ const Home = () => {
             </div>
           </div>
           <h2 className='home__subTitle'>Développeur Web / Web mobile</h2>
-          <button>Me Contacter</button>
+          <button className='button'>Me Contacter</button>
         </div>
         <img className='home__image' src={photo} alt='portrait de moi' />
       </div>
