@@ -1,3 +1,11 @@
+.navbar-scrolled {
+    background-color: var(--text);
+    z-index: 1;
+    .navbar__logo, .navbar__link {
+        color: var(--background);
+    }
+}
+
 .navbar {
     font-family: 'Bungee', sans-serif;
     color: var(--text);
@@ -7,7 +15,9 @@
     height: 60px;
     position: fixed;
     top: 0;
+    transition: .3s ease-in;
     
+
     &__logo {
         font-size: 2rem;
     }
