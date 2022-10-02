@@ -19,6 +19,13 @@
             text-align: justify;
         }
 
+        a {
+            font-weight: bold;
+            color: var(--text);
+            margin: 0.2rem;
+            cursor: pointer;
+        }
+
         h3 {
             margin: 1rem 0;
         }

@@ -17,7 +17,7 @@ const About = () => {
             </p>
             <p>
               J'ai donc suivi une formation fullstack avec l'école de formation
-              <a href='https://oclock.io/'> O'clock, </a>
+              <a href='https://oclock.io/'>O'clock,</a>
               avec une spécialisation sur React, puis j'ai passé le Titre
               Professionnel de Niveau 5.
             </p>

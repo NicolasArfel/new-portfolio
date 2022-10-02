@@ -4,6 +4,13 @@
     .navbar__logo, .navbar__link {
         color: var(--background);
     }
+
+    :where(.navbar__logo, .navbar__link):hover {
+        cursor: pointer;
+        background-color: var(--background);
+        color: var(--text);
+        border-radius: 5px;
+    }
 }
 
 .navbar {
