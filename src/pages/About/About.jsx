@@ -18,15 +18,13 @@ const About = () => {
             <p>
               J'ai donc suivi une formation fullstack avec l'école de formation
               <a href='https://oclock.io/'>O'clock,</a>
-              avec une spécialisation sur React, puis j'ai passé le Titre
-              Professionnel de Niveau 5.
+              puis j'ai passé le Titre Professionnel de Niveau 5.
             </p>
             <p>
-              Et je compte mettre à profit toutes les compétences acquises lors
-              de cette reconversion, et continuer à diversifier et développer
-              mes connaissances dans ce milieu professionnel si riche et
-              diversifié. Je suis passionné par le cinéma, les jeux vidéos et le
-              voyage, secteurs dans lesquels j'aimerais pouvoir exercer mais je
+              Je compte mettre à profit toutes les compétences acquises lors de
+              cette reconversion, et continuer à diversifier et développer mes
+              connaissances dans ce milieu professionnel si riche et diversifié.
+              Je suis passionné par le cinéma, les jeux vidéos et le voyage, je
               suis également de tempérament curieux et je saisi toutes les
               occasions pour m'enrichir intellectuellement et
               professionnellement.

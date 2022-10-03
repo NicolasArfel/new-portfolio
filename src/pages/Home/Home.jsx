@@ -3,6 +3,10 @@ import photo from './photo-de-profil.jpg';
 import './Home.scss';
 
 const Home = () => {
+  const handleClick = () => {
+    document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <>
       <div id='accueil' className='home'>
@@ -20,7 +24,9 @@ const Home = () => {
             </div>
           </div>
           <h2 className='home__subTitle'>Développeur Web / Web mobile</h2>
-          <button className='button'>Me Contacter</button>
+          <button className='button' onClick={handleClick}>
+            Me Contacter
+          </button>
         </div>
         <img className='home__image' src={photo} alt='portrait de moi' />
       </div>
