@@ -6,6 +6,10 @@ const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
   const navLinks = ['Accueil', 'A propos', 'Projets', 'Contact'];
 
+  const activeToggle = () => {
+    setIsActive(!isActive);
+  };
+
   const renderNavLinks = (content) => {
     const contentValue = `${content.toLowerCase()}`;
     const scrollToId = () => {
@@ -39,8 +43,27 @@ const Navbar = () => {
   window.addEventListener('scroll', changeColor);
   return (
     <>
-      <nav className={color ? 'navbar navbar-scrolled' : 'navbar'}>
-        <button className='hamburger hamburger--squeeze' type='button'>
+      {/* <nav className={color ? 'navbar navbar-scrolled' : 'navbar'}> */}
+      <nav
+        className={
+          isActive
+            ? color
+              ? 'navbar navbar-scrolled is-active'
+              : 'navbar is-active'
+            : color
+            ? 'navbar navbar-scrolled'
+            : 'navbar'
+        }
+      >
+        <button
+          onClick={activeToggle}
+          className={
+            isActive
+              ? 'hamburger hamburger--squeeze is-active'
+              : 'hamburger hamburger--squeeze'
+          }
+          type='button'
+        >
           <span className='hamburger-box'>
             <span className='hamburger-inner'></span>
           </span>

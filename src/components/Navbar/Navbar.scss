@@ -34,7 +34,7 @@
     padding: 1rem;
   }
 
-  :where(&__logo, &__link):hover {
+  &__link:hover {
     cursor: pointer;
     background-color: var(--text);
     color: var(--background);
@@ -47,33 +47,46 @@
   }
 }
 
+
 @media screen and (max-width: 800px) {
   .navbar {
     flex-direction: column;
     align-items: flex-end;
     background-color: var(--background);
     z-index: 1;
-    
+
     &__list,
     &__logo {
-        background-color: var(--background);
-        width: 100%;
-        align-items: center;
-        transition: 0.3s ease-in;
+        display: none;
+      background-color: var(--background);
+      width: 100%;
+      align-items: center;
+      transition: 0.3s ease-in;
     }
     &__list {
-        flex-direction: column;
+      flex-direction: column;
     }
     &__logo {
-        text-align: center;
+      text-align: center;
     }
-}
-.navbar-scrolled {
+  }
+
+  .is-active {
+    .navbar__logo, .navbar__list{
+        display: flex;
+        justify-content: center;
+    }
+    
+  }
+
+  .navbar-scrolled {
     background-color: var(--text);
     .navbar__logo,
     .navbar__list {
-          background-color: var(--text);
-        color: var(--background);
-      }
+      background-color: var(--text);
+      color: var(--background);
+    }
   }
+
+
 }
