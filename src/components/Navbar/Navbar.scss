@@ -1,47 +1,79 @@
 .navbar-scrolled {
-    background-color: var(--text);
-    z-index: 1;
-    .navbar__logo, .navbar__link {
-        color: var(--background);
-    }
+  background-color: var(--text);
+  z-index: 1;
+  .navbar__logo,
+  .navbar__link {
+    color: var(--background);
+  }
 
-    :where(.navbar__logo, .navbar__link):hover {
-        cursor: pointer;
-        background-color: var(--background);
-        color: var(--text);
-        border-radius: 5px;
-    }
+  :where(.navbar__logo, .navbar__link):hover {
+    cursor: pointer;
+    background-color: var(--background);
+    color: var(--text);
+    border-radius: 5px;
+  }
 }
 
 .navbar {
-    font-family: 'Bungee', sans-serif;
-    color: var(--text);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    transition: .3s ease-in;
-    
+  font-family: 'Bungee', sans-serif;
+  color: var(--text);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  transition: 0.3s ease-in;
 
+  &__logo {
+    font-size: 2rem;
+  }
+
+  &__logo,
+  &__link {
+    padding: 1rem;
+  }
+
+  :where(&__logo, &__link):hover {
+    cursor: pointer;
+    background-color: var(--text);
+    color: var(--background);
+    border-radius: 5px;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: var(--background);
+    z-index: 1;
+    
+    &__list,
     &__logo {
-        font-size: 2rem;
+        background-color: var(--background);
+        width: 100%;
+        align-items: center;
+        transition: 0.3s ease-in;
     }
-    
-    &__logo, &__link {
-        padding: 1rem;   
+    &__list {
+        flex-direction: column;
     }
-    
-    :where(&__logo, &__link):hover{
-        cursor: pointer;
-        background-color: var(--text);
+    &__logo {
+        text-align: center;
+    }
+}
+.navbar-scrolled {
+    background-color: var(--text);
+    .navbar__logo,
+    .navbar__list {
+          background-color: var(--text);
         color: var(--background);
-        border-radius: 5px;
-    }
-    
-    &__list{
-        display: flex;
-        list-style: none;
-    }
+      }
+  }
 }

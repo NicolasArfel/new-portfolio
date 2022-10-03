@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import './Navbar.scss';
+import './Hamburgers.scss';
 
 const Navbar = () => {
+  const [isActive, setIsActive] = useState(false);
   const navLinks = ['Accueil', 'A propos', 'Projets', 'Contact'];
 
   const renderNavLinks = (content) => {
@@ -38,6 +40,11 @@ const Navbar = () => {
   return (
     <>
       <nav className={color ? 'navbar navbar-scrolled' : 'navbar'}>
+        <button className='hamburger hamburger--squeeze' type='button'>
+          <span className='hamburger-box'>
+            <span className='hamburger-inner'></span>
+          </span>
+        </button>
         <h1 className='navbar__logo'>NA</h1>
         <ul className='navbar__list'>
           {navLinks.map((nav) => renderNavLinks(nav))}
