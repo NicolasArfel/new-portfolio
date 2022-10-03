@@ -27,7 +27,12 @@
       object-fit: cover;
     }
   }
-
+  
+  &__title {
+    font-weight: bold;
+    text-decoration: underline;
+    
+  }
   &__infos {
     display: flex;
     flex-direction: column;
@@ -38,8 +43,6 @@
     padding: 1rem;
 
     h3 {
-      font-weight: bold;
-      text-decoration: underline;
     }
   }
 
@@ -56,9 +59,19 @@
   color: var(--text);
   background-color: var(--dark-text);
   box-shadow: 0px 6px 0px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+
+    img {
+      position: absolute;
+      right: -3rem;
+      top: 0.6rem;
+      width: 30px;
+      height: 30px;
+    }
 
   &:hover {
     background-color: var(--text);
     color: var(--background);
   }
+
 }

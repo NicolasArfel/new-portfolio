@@ -4,50 +4,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: 'Bungee', sans-serif;
-}
-li {
-  list-style: none;
+  animation: appear 3s infinite;
 }
 
-// .dynamic-txts p {
-//     position: relative;
-//     width: max-content;
-// }
-
-// .dynamic-txts p::before,
-// .dynamic-txts p::after {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   left: 0;
-// }
-
-// .dynamic-txts p::before {
-//   background: var(--background);
-//   animation: typewriter 6s
-//     steps(5) 1s infinite;
-// }
-
-// .dynamic-txts p::after {
-//   width: 0.125em;
-//   background: black;
-//   animation: typewriter 6s
-//       steps(5) 1s infinite,
-//     blink 750ms steps(5) infinite;
-// }
-
-// @keyframes typewriter {
-//     to {
-//       left: 100%;
-//     }
-//   }
-  
-//   @keyframes blink {
-//     to {
-//       background: transparent;
-//     }
-//   }
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

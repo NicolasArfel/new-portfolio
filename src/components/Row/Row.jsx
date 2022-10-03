@@ -1,6 +1,6 @@
 import React from 'react';
 import './Row.scss';
-import photo from './photo-de-profil.jpg';
+import git from './git-icon.png';
 import photo1 from './advice.png';
 import photo2 from './converter.png';
 import photo3 from './form.png';
@@ -20,12 +20,22 @@ const Row = () => {
               Ce projet a été réalisé avec du CSS et Javascript pour faire le
               lien avec l'API AdviceSlip. Il s'agit d'un générateur de conseils.
             </p>
+
             <a
               href='https://myadvice-generator.netlify.app/'
               target='_blank'
               rel='noreferrer'
             >
-              <button className='button'>Voir le projet</button>
+              <button className='button'>
+                Voir le projet
+                <a
+                  href='https://github.com/NicolasArfel/advice-generator-from-api'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src={git} alt='logo git' />
+                </a>
+              </button>
             </a>
           </div>
         </div>
@@ -33,7 +43,7 @@ const Row = () => {
           <img src={photo2} alt='projet' />
 
           <div className='project__infos'>
-            <h3 className='project__title'>Converter</h3>
+            <h3 className='project__title'>Converter </h3>
             <p className='project__description'>
               {' '}
               Ce projet a été réalisé avec React et Sass. Il s'agit d'un
@@ -44,7 +54,16 @@ const Row = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button className='button'>Voir le projet</button>
+              <button className='button'>
+                Voir le projet
+                <a
+                  href='https://github.com/NicolasArfel/converter-react'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src={git} alt='logo git' />
+                </a>
+              </button>
             </a>{' '}
           </div>
         </div>
@@ -52,7 +71,7 @@ const Row = () => {
           <img src={photo3} alt='projet' />
 
           <div className='project__infos'>
-            <h3 className='project__title'>Formulaire inscription</h3>
+            <h3 className='project__title'>Formulaire inscription </h3>
             <p className='project__description'>
               {' '}
               Ce projet a été réalisé CSS dans un optique de responsivité
@@ -63,7 +82,16 @@ const Row = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button className='button'>Voir le projet</button>
+              <button className='button'>
+                Voir le projet
+                <a
+                  href='https://github.com/NicolasArfel/signup-form-master'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src={git} alt='logo git' />
+                </a>
+              </button>
             </a>{' '}
           </div>
         </div>
@@ -71,7 +99,7 @@ const Row = () => {
           <img src={photo4} alt='projet' />
 
           <div className='project__infos'>
-            <h3 className='project__title'>Snap page d'accueil</h3>
+            <h3 className='project__title'>Snap page d'accueil </h3>
             <p className='project__description'>
               {' '}
               Ce projet a été réalisé avec Javascript et le framework Bulma
@@ -81,7 +109,16 @@ const Row = () => {
               target='_blank'
               rel='noreferrer'
             >
-              <button className='button'>Voir le projet</button>
+              <button className='button'>
+                Voir le projet{' '}
+                <a
+                  href='https://github.com/NicolasArfel/Intro-section-with-dropdown-navigation'
+                  target='_blank'
+                  rel='noreferrer'
+                >
+                  <img src={git} alt='logo git' />
+                </a>
+              </button>
             </a>{' '}
           </div>
         </div>

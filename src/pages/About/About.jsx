@@ -6,7 +6,7 @@ import './About.scss';
 const About = () => {
   return (
     <>
-      <div className='about'>
+      <div id='about' className='about'>
         <Title title={'A Propos'} />
         <div className='about__section'>
           <section>

@@ -1,53 +1,35 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Skills.scss';
 
 const Skills = () => {
+  const [skill, setSkill] = useState('HTML/CSS');
+
+  useEffect(() => {
+    var words = [
+      'HTML/CSS',
+      'SCSS',
+      'JAVASCRIPT',
+      'REACT',
+      'REACT-REDUX',
+      'NODE.JS',
+      'SQL',
+      'POSTGRESQL',
+      'SEQUELIZE',
+      'GIT',
+      'FIGMA',
+      'MATERIALIZE',
+      'BULMA',
+      'TAILWIND',
+    ];
+    let i = 0;
+    setInterval(function () {
+      setSkill(words[(i = (i + 1) % words.length)]);
+    }, 3000);
+  }, []);
+
   return (
     <div className='skills'>
-      <ul className='dynamic-txts'>
-        {/* <li>
-          <p>HTML/CSS</p>
-        </li>
-        <li>
-          <p>SCSS</p>
-        </li>
-        <li>
-          <p>JAVASCRIPT</p>
-        </li> */}
-        <li>
-          <p>REACT</p>
-        </li>
-        {/* <li>
-          <p>REACT-REDUX</p>
-        </li>
-        <li>
-          <p>NODE.JS</p>
-        </li>
-        <li>
-          <p>SQL</p>
-        </li>
-        <li>
-          <p>POSTGRESQL</p>
-        </li>
-        <li>
-          <p>SEQUELIZE</p>
-        </li>
-        <li>
-          <p>GIT</p>
-        </li>
-        <li>
-          <p>STRAPI</p>
-        </li>
-        <li>
-          <p>WORDPRESS</p>
-        </li>
-        <li>
-          <p>MATERIALIZE</p>
-        </li>
-        <li>
-          <p>BULMA</p>
-        </li> */}
-      </ul>
+      <h3 className='words'>{skill}</h3>
     </div>
   );
 };

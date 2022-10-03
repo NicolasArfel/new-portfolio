@@ -6,7 +6,7 @@ import './Projects.scss';
 const Projects = () => {
   return (
     <>
-      <div className='projects'>
+      <div id='projets' className='projects'>
         <Title title={'Mes Projets'} />
         <Row />
       </div>
