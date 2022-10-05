@@ -4,12 +4,16 @@ import './Hamburgers.scss';
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
+  const [color, setColor] = useState(false);
+
   const navLinks = ['Accueil', 'A propos', 'Projets', 'Contact'];
 
+  // i create a toggle for the navbar / burger menu
   const activeToggle = () => {
     setIsActive(!isActive);
   };
 
+  // this function make the scroll automatic by clicking on a link
   const renderNavLinks = (content) => {
     const contentValue = `${content.toLowerCase()}`;
     const scrollToId = () => {
@@ -32,7 +36,7 @@ const Navbar = () => {
     );
   };
 
-  const [color, setColor] = useState(false);
+  // change the navbar background color on scroll
   const changeColor = () => {
     if (window.scrollY >= 90) {
       setColor(true);
@@ -40,11 +44,10 @@ const Navbar = () => {
       setColor(false);
     }
   };
-
   window.addEventListener('scroll', changeColor);
+
   return (
     <>
-      {/* <nav className={color ? 'navbar navbar-scrolled' : 'navbar'}> */}
       <nav
         className={
           isActive

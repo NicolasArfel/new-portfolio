@@ -1,37 +1,36 @@
 .title {
-    font-family: 'Bungee', sans-serif;
-    font-size: 3rem;
-    position: relative;
-    top: 4rem;
-    left: 8rem;
-    width: fit-content;
-
+  font-family: 'Bungee', sans-serif;
+  font-size: 3rem;
+  position: relative;
+  top: 4rem;
+  left: 8rem;
+  width: fit-content;
 }
 .title::after {
-    position: absolute;
-    content: "";
-    width: 0%;
-    height: 4px;
-    background-color: whitesmoke;
-    left: 50%;
-    bottom: -10px;
-    transition: all 0.4s ease-in-out;
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 4px;
+  background-color: whitesmoke;
+  left: 50%;
+  bottom: -10px;
+  transition: all 0.4s ease-in-out;
 }
 
 .title:hover::after {
-	width: 100%;
-	left: 0;
+  width: 100%;
+  left: 0;
 }
 
 @media screen and (max-width: 1024px) {
-    .title {
-     font-size: 2rem;
-     position:initial;
-     margin: auto;
-     text-decoration: underline;
-    }
-
-    .title::after {
-        position: inherit;
-    }
+  .title {
+    font-size: 2rem;
+    position: initial;
+    margin: auto;
+    text-decoration: underline;
   }
+
+  .title::after {
+    position: inherit;
+  }
+}

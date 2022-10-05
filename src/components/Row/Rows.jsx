@@ -1,8 +1,5 @@
 import React from 'react';
 import './Rows.scss';
-import git from './git-icon.png';
-
-// import photo1 from './advice.png';
 
 const Rows = ({ title, description, photo, link }) => {
   return (

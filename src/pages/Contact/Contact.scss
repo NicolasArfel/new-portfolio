@@ -35,18 +35,17 @@
 }
 @media screen and (max-width: 800px) {
   .contact {
-    
     &__section {
       flex-direction: column;
       width: 100%;
     }
     &__infos {
-        width: 100%;
-        margin-top: 5rem;
-        p {
-            margin: 1rem auto;
-            text-align: center;
-        }
+      width: 100%;
+      margin-top: 5rem;
+      p {
+        margin: 1rem auto;
+        text-align: center;
+      }
     }
   }
 }

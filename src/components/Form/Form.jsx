@@ -5,6 +5,7 @@ import './Form.scss';
 const Form = () => {
   const form = useRef();
 
+  // emailjs configuration
   const sendEmail = (e) => {
     e.preventDefault();
 

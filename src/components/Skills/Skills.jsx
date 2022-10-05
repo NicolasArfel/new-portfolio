@@ -4,6 +4,7 @@ import './Skills.scss';
 const Skills = () => {
   const [skill, setSkill] = useState('HTML/CSS');
 
+  // i create the animation that makes the skills appear every 3 seconds
   useEffect(() => {
     var words = [
       'HTML/CSS',
