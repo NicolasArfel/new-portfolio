@@ -23,6 +23,7 @@ const Navbar = () => {
       document
         .getElementById(scrollToId())
         .scrollIntoView({ behavior: 'smooth' });
+      activeToggle();
     };
     return (
       <li key={content} onClick={handleClickNav} className='navbar__link'>

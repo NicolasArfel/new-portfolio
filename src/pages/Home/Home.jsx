@@ -23,7 +23,7 @@ const Home = () => {
               <p className='letter-7'>S</p>
             </div>
           </div>
-          <h2 className='home__subTitle'>Développeur Web / Web mobile</h2>
+          <h1 className='home__subTitle'>Développeur Web / Web mobile</h1>
           <button className='button' onClick={handleClick}>
             Me Contacter
           </button>

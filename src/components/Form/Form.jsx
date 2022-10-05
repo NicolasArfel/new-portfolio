@@ -31,7 +31,7 @@ const Form = () => {
   return (
     <>
       <form className='form' ref={form} onSubmit={sendEmail}>
-        <input type='text' name='name' placeholder='Name' required />
+        <input type='text' name='name' placeholder='Nom' required />
         <input type='email' name='email' placeholder='Email' required />
         <textarea
           name='message'
