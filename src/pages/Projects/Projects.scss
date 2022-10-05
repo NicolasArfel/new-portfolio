@@ -21,3 +21,13 @@
   justify-content: center;
   align-items: center;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--background) !important;
+  background-color: var(--medium);
+  opacity: 0.7;
+  border-radius: 50%;
+  width: 50px !important;
+  height: 50px !important;
+}
