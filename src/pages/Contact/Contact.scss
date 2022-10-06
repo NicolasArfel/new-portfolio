@@ -17,13 +17,23 @@
   }
 
   &__infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
     p {
-      width: 100%;
-      margin: auto 25%;
-      margin-bottom: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: fit-content;
+      margin: 1rem 0;
+      // margin: auto 25%;
     }
     span {
       font-weight: bold;
+      margin-right: 1rem;
+      font-size: 1.5rem;
     }
   }
 }
@@ -40,11 +50,11 @@
       width: 100%;
     }
     &__infos {
-      width: 100%;
+      width: 50;
       margin-top: 5rem;
       p {
-        margin: 1rem auto;
-        text-align: center;
+        margin: 1rem;
+        width: fit-content;
       }
     }
   }

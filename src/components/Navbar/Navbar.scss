@@ -17,6 +17,7 @@
   &__logo,
   &__link {
     padding: 1rem;
+    margin: auto 0;
   }
 
   &__link:hover {
@@ -51,6 +52,7 @@
 @media screen and (max-width: 800px) {
   .navbar {
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-end;
     background-color: var(--background);
     z-index: 9999;
@@ -61,17 +63,21 @@
       background-color: var(--background);
       width: 100%;
       align-items: center;
-      transition: 0.3s ease-in;
     }
     &__list {
       flex-direction: column;
     }
     &__logo {
       text-align: center;
+      margin: 0 auto;
     }
   }
 
   .is-active {
+    height: 100vh;
+    button {
+      height: fit-content;
+    }
     .navbar__logo,
     .navbar__list {
       display: flex;

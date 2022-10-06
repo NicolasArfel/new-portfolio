@@ -34,7 +34,7 @@ const Projects = () => {
       description: `
       Site vitrine d'un architecte d'intérieur, avec back-office pour la gestion de ses projets et articles. Créé avec React-Redux, Materialize côté front et Node-Js, postgreSQL / SQL, JWT,Bcrypt, Multer pour l'API. 
     `,
-      link: `https://moviedb-netflix-clone.netlify.app/`,
+      link: `http://www.salleanthony.fr:8082/projets`,
       photo: photo6,
     },
     {
@@ -50,13 +50,13 @@ const Projects = () => {
       title: 'Converter',
       description: `Ce projet a été réalisé avec React et Sass. Il s'agit d'un
       convertisseur de devises totalement dynamique avec une barre de recherche intégrée.`,
-      link: `https://https://converter-with-react.netlify.app/-generator.netlify.app/`,
+      link: `https://converter-with-react.netlify.app/`,
       photo: photo3,
     },
     {
       id: 4,
       title: `Formulaire d'inscription`,
-      description: `Ce projet a été réalisé en pur CSS, avec une utilisation du BEM dans un soucis de clareté du code.
+      description: `Ce projet a été réalisé en pur CSS, avec une utilisation du BEM dans un soucis de clareté du code
       totale.`,
       link: `https://static-signup-form.netlify.app/`,
       photo: photo4,
@@ -104,8 +104,8 @@ const Projects = () => {
           }}
           navigation
           pagination={{ clickable: true }}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => console.log(swiper)}
         >
           {data.map((project) => (
             <SwiperSlide className='swiper-slide'>

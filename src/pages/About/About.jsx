@@ -21,13 +21,11 @@ const About = () => {
               puis j'ai passé le Titre Professionnel de Niveau 5.
             </p>
             <p>
-              Je compte mettre à profit toutes les compétences acquises lors de
-              cette reconversion, et continuer à diversifier et développer mes
-              connaissances dans ce milieu professionnel si riche et diversifié.
-              Je suis passionné par le cinéma, les jeux vidéos et le voyage, je
-              suis également de tempérament curieux et je saisi toutes les
-              occasions pour m'enrichir intellectuellement et
-              professionnellement.
+              Je suis passionné par le cinéma, les jeux vidéos, le voyage et la
+              street-food. Je suis également de tempérament curieux et je saisis
+              toutes les occasions pour m'enrichir intellectuellement et
+              professionnellement. Sérieux et rigoureux, j'apporte également la
+              touche humour dans le groupe !
             </p>
             <p>
               Alors n'hésitez pas à me contacter si vous souhaitez que j'intègre
