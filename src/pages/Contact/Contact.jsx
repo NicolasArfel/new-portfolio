@@ -14,11 +14,13 @@ const Contact = () => {
               <span className='material-symbols-outlined'>
                 phone_in_talk_watchface_indicator
               </span>{' '}
-              06 99 73 74 27
+              <a href='tel:+33699737427'>06 99 73 74 27 </a>
             </p>
             <p>
               <span className='material-symbols-outlined'>mail</span>{' '}
-              nicolasarfel@gmail.com
+              <a href='mailto: nicolasarfel@gmail.com'>
+                nicolasarfel@gmail.com
+              </a>
             </p>
             <p>
               <span className='material-symbols-outlined'>pin_drop</span>{' '}

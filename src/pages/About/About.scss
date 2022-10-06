@@ -55,13 +55,20 @@
     }
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   .about {
+    height: 100vh;
     &__section {
       section {
-        font-size: 1.3rem;
+        font-size: 1rem;
         text-align: left;
       }
     }
+  }
+}
+@media screen and (max-width: 375px) {
+  .about {
+    height: 130vh;
+    
   }
 }

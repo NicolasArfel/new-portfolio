@@ -1,5 +1,5 @@
 import React from 'react';
-import photo from './photo-de-profil.jpg';
+import photo from './profil.jpg';
 import './Home.scss';
 
 const Home = () => {
@@ -28,7 +28,11 @@ const Home = () => {
             Me Contacter
           </button>
         </div>
-        <img className='home__image' src={photo} alt='portrait de moi' />
+        <img
+          className='home__image'
+          src={photo}
+          alt='portrait de moi en mode selfie : jeune homme barbu dans un bureau, regardant dans un coin'
+        />
       </div>
     </>
   );
